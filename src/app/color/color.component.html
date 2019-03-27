@@ -1,0 +1,12 @@
+<app-fils (SendRequestToData)="processRequest($event)" [filsProperty]="color"></app-fils>
+
+<div [style.backgroudColor]= "color">
+  color
+</div>
+<input [(ngModel)]="color"
+ type="text" 
+ class="form_control"> 
+
+ le contenu de la propriété color est {{ color }}
+
+ <button (click)="loggerMesData()">log data</button>
